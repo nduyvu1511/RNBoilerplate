@@ -1,3 +1,45 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": false,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/assets": ["./src/assets"],
+      "@/assets/*": ["./src/assets/*"],
+      "@/components": ["./src/components"],
+      "@/components/*": ["./src/components/*"],
+      "@/configs": ["./src/configs"],
+      "@/configs/*": ["./src/configs/*"],
+      "@/constants": ["./src/constants"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/core": ["./src/core"],
+      "@/core/*": ["./src/core/*"],
+      "@/hooks": ["./src/hooks"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/types": ["./src/types"],
+      "@/types/*": ["./src/types/*"],
+      "@/navigators": ["./src/navigators"],
+      "@/navigators/*": ["./src/navigators/*"],
+      "@/repositories": ["./src/repositories"],
+      "@/repositories/*": ["./src/repositories/*"],
+      "@/scenes": ["./src/scenes"],
+      "@/scenes/*": ["./src/scenes/*"],
+      "@/services": ["./src/services"],
+      "@/services/*": ["./src/services/*"],
+      "@/stores": ["./src/stores"],
+      "@/stores/*": ["./src/stores/*"],
+      "@/theme": ["./src/theme"],
+      "@/theme/*": ["./src/theme/*"],
+      "@/utils": ["./src/utils"],
+      "@/utils/*": ["./src/utils/*"]
+    }
+  }
 }
